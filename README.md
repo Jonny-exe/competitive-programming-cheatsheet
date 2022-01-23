@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## Competitive programming cheatsheet
 
-You can use the [editor on GitHub](https://github.com/Jonny-exe/competitive-programming-cheatsheet/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a cheat sheet made for when you are stuck on a problem and can't find the optimal solution. This will refresh your memory and hopefully help you find the concept/approach you should be using for your problem.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is not made to teach your any of these concepts/approaches, it's only made to help you quickly identify which one you should be using for each problem.
 
-### Markdown
+If you aren't familiar with one of these concepts/approaches I'd recommend you learn it at [Usaco Guide](https://usaco.guide/). That is also the source for most of the example problems.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+_Note: time complexity and space complexity are very dependent on the input data and therefore the ones written here are purely an estimation of what they usually are in common problems._
 
-```markdown
-Syntax highlighted code block
+## Approaches/Concepts
 
-# Header 1
-## Header 2
-### Header 3
+### Complete search
+ - _Problems_: this is used in problems where you need to check every possible solution and pick out the one your need.
+ - _Time complexity_: `O(n²) || O(n³)` **Depending on input dimensions**
+ - _Example problem_:  [Cow Gymnastics](http://www.usaco.org/index.php?page=viewproblem2&cpid=963)
 
-- Bulleted
-- List
+### Sorting
+ - _Problems_: this is used in problems where sorting will make it easier to compare/find something.
+ - _Time complexity_: `O(log n)`
+ - _Example problem_:  [Kayaking](https://codeforces.com/contest/863/problem/B)
 
-1. Numbered
-2. List
+### Greedy algorithms
+ - _Problems_: this is used in problems where you can always make the right decision with your current information.
+ - _Time complexity_: `O(n)`
+ - _Example problem_:  [Coin Problem](https://cses.fi/problemset/task/1630)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Jonny-exe/competitive-programming-cheatsheet/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
