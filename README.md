@@ -1,4 +1,4 @@
-## Competitive programming cheatsheet
+## [Competitive programming cheatsheet](jonny-exe.github.io/competitive-programming-c)
 
 This is a cheat sheet made for when you are stuck on a problem and can't find the optimal solution. This will refresh your memory and hopefully help you find the concept/approach you should be using for your problem.
 
@@ -25,3 +25,20 @@ _Note: time complexity and space complexity are very dependent on the input data
  - _Time complexity_: `O(n)`
  - _Example problem_:  [Coin Problem](https://cses.fi/problemset/task/1630)
 
+### Binary search
+ - _Problems_: this is usually not enough to solve an entire problem, but it helps finding items in a sorted array.
+ - _Time complexity_: `O(n)` **If the array is sorted, else** `O(log n)`
+ - _Example problem_: [Social Distancing](http://www.usaco.org/index.php?page=viewproblem2&cpid=1038)
+
+### Prefix sum
+ - _Problems_: this is used in problems where calculating a prefix/cumulative sum beforehand, avoids computation afterwards.
+ - _Time complexity_: `O(n)`
+ - _Example problem_: [Subsequences summing to 7](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)
+
+### Dynamic programming
+ - _Problems_: this is used in problems which you can divide in sub-problems. Therefore can calculate every possible output calculating every sub-problem once.
+ - _Time complexity_: `O(2^n)`
+ - _Example problem_: [Coin combinations](https://cses.fi/problemset/task/1635/)
+
+
+ 
