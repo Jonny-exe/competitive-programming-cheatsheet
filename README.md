@@ -1,4 +1,4 @@
-## [Competitive programming cheatsheet](jonny-exe.github.io/competitive-programming-c)
+## [Competitive programming cheatsheet](jonny-exe.github.io/competitive-programming-cheatsheet)
 
 This is a cheat sheet made for when you are stuck on a problem and can't find the optimal solution. This will refresh your memory and hopefully help you find the concept/approach you should be using for your problem.
 
