@@ -1,4 +1,4 @@
-## [Competitive programming cheatsheet](https://jonny-exe.github.io/competitive-programming-cheatsheet)
+# [Competitive programming cheatsheet](https://jonny-exe.github.io/competitive-programming-cheatsheet)
 
 This is a cheat sheet made for when you are stuck on a problem and can't find the optimal solution. This will refresh your memory and hopefully help you find the concept/approach you should be using for your problem.
 
@@ -47,7 +47,7 @@ _Note: time complexity and space complexity are very dependent on the input data
 
 ### Sliding window
  - _Problems_: this is used in problems where want to compute a local value for each (constant length) sub-array in the original array.
- - _Time complexity_: `O(n * log n)` **If the window is very large** O(n²) 
+ - _Time complexity_: `O(n * log n)` **If the window is very large** `O(n²)`
  - _Example problem_: [Subarray Distinct Values](https://cses.fi/problemset/task/2428)
 
 If none from these approaches will do it for your problem, maybe using the right  data type will. Usually these data types will have to be mixed with one of the approaches seen above.
@@ -64,3 +64,12 @@ If none from these approaches will do it for your problem, maybe using the right
  -  _Example problem_: [Sum of two values](https://cses.fi/problemset/task/1640)
  - _Note_: in `C++` there is a `set` and an `unordered_set`.
  
+
+
+## Sources
+ - [Wikipedia](https://wikipedia.org) for some descriptions
+ - [CSES](https://cses.fi), [Codeforces](https://codeforces.com), [USACO](http://usaco.org) for the problems
+ - [Usaco Guide](https://usaco.guide) for th
+
+## Improvements?
+If you feel like something is missing or you'd like to improve it, PR's are appreciated.
