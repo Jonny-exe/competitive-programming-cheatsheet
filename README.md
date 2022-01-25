@@ -10,12 +10,10 @@ _Note: time complexity and space complexity are very dependent on the input data
 
 ## Approaches/Concepts
 
-### Types
-
 ### Complete search
  - _Problems_: this is used in problems where you need to check every possible solution and pick out the one your need.
  - _Time complexity_: `O(n²) || O(n³)` **Depending on input dimensions**
- - _Example problem_:  [Cow Gymnastics](http//www.usaco.org/index.php?page=viewproblem2&cpid=963)
+ - _Example problem_:  [Cow Gymnastics](http://www.usaco.org/index.php?page=viewproblem2&cpid=963)
 
 ### Sorting
  - _Problems_: this is used in problems where sorting will make it easier to compare/find something.
