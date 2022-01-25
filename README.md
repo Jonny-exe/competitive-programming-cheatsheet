@@ -17,7 +17,7 @@ _Note: time complexity and space complexity are very dependent on the input data
 
 ### Sorting
  - _Problems_: this is used in problems where sorting will make it easier to compare/find something.
- - _Time complexity_: `O(log n)`
+ - _Time complexity_: `O(n * log n)`
  - _Example problem_:  [Kayaking](https://codeforces.com/contest/863/problem/B)
 
 ### Greedy algorithms
@@ -27,7 +27,7 @@ _Note: time complexity and space complexity are very dependent on the input data
 
 ### Binary search
  - _Problems_: this is usually not enough to solve an entire problem, but it helps finding items in a sorted array.
- - _Time complexity_: `O(n)` **If the array is sorted, else** `O(log n)`
+ - _Time complexity_: `O(log n)` **If the array is sorted, else** `O(n * log n)`
  - _Example problem_: [Social Distancing](http://www.usaco.org/index.php?page=viewproblem2&cpid=1038)
 
 ### Prefix sum
