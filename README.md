@@ -10,10 +10,12 @@ _Note: time complexity and space complexity are very dependent on the input data
 
 ## Approaches/Concepts
 
+### Types
+
 ### Complete search
  - _Problems_: this is used in problems where you need to check every possible solution and pick out the one your need.
  - _Time complexity_: `O(n²) || O(n³)` **Depending on input dimensions**
- - _Example problem_:  [Cow Gymnastics](http://www.usaco.org/index.php?page=viewproblem2&cpid=963)
+ - _Example problem_:  [Cow Gymnastics](http//www.usaco.org/index.php?page=viewproblem2&cpid=963)
 
 ### Sorting
  - _Problems_: this is used in problems where sorting will make it easier to compare/find something.
@@ -41,4 +43,17 @@ _Note: time complexity and space complexity are very dependent on the input data
  - _Example problem_: [Coin combinations](https://cses.fi/problemset/task/1635/)
 
 
+If none from these approaches will do it for your problem, maybe using the right  data type will. Usually these data types will have to be mixed with one of the approaches seen above.
+
+## Data types
+
+### Maps
+ - _Problems_: this is used in problems where you need to associate 2 values, and read them in `O(1)` time.
+ - _Example problem_: [Team Tic Tac Toe](http://www.usaco.org/index.php?page=viewproblem2&cpid=831)
+ - _Note_: in `C++` there is a `map` and an `unordered_map`.
+
+### Sets
+ - _Problems_: this is used in problems where: you need to be able to check if a value exist, you need to get unique values in `O(n)` (standard way with array is `O(log n))` time.
+ -  _Example problem_: [Sum of two values](https://cses.fi/problemset/task/1640)
+ - _Note_: in `C++` there is a `set` and an `unordered_set`.
  
