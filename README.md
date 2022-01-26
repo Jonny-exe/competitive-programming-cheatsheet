@@ -64,7 +64,12 @@ If none from these approaches will do it for your problem, maybe using the right
  -  _Example problem_: [Sum of two values](https://cses.fi/problemset/task/1640)
  - _Note_: in `C++` there is a `set` and an `unordered_set`.
  
-
+## Fast I/O
+Adding these two lines will spead up the reading of your program.
+```
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+```
 
 ## Sources
  - [Wikipedia](https://wikipedia.org) for some descriptions
