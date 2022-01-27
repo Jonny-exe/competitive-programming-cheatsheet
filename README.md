@@ -29,10 +29,6 @@ _Note: time complexity and space complexity are very dependent on the input data
  - _Time complexity_: `O(n)`
  - _Example problem_:  [Coin Problem](https://cses.fi/problemset/task/1630)
 
-### [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
- - _Problems_: this is usually not enough to solve an entire problem, but it helps finding items in a sorted array.
- - _Time complexity_: `O(log n)` **If the array is sorted, else** `O(n * log n)`
- - _Example problem_: [Social Distancing](http://www.usaco.org/index.php?page=viewproblem2&cpid=1038)
 
 ### [Prefix sum](https://en.wikipedia.org/wiki/Prefix_sum)
  - _Description_: a prefix sum is usually an array, where all the values are changed, with, the sum of all the previous values and the value you are changing.
@@ -41,14 +37,41 @@ _Note: time complexity and space complexity are very dependent on the input data
  - _Example problem_: [Subsequences summing to 7](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)
 
 ### [Dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming)
- - _Problems_: this is used in problems which you can divide in sub-problems. 
+ - _Problems_: this is used in problems which you can divide in sub-problems.
  - _Time complexity_: `O(2^n)`
  - _Example problem_: [Coin combinations](https://cses.fi/problemset/task/1635/)
 
 ### Sliding window
- - _Problems_: this is used in problems where want to compute a local value for each (constant length) sub-array in the original array.
+ - _Problems_: this is used in problems where you want to compute a local value for each (constant length) sub-array in the original array.
  - _Time complexity_: `O(n * log n)` **If the window is very large** `O(n²)`
  - _Example problem_: [Subarray Distinct Values](https://cses.fi/problemset/task/2428)
+
+### [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+ - _Problems_: this is usually not enough to solve an entire problem, but it helps finding items in a sorted array.
+ - _Time complexity_: `O(log n)` **If the array is sorted, else** `O(n * log n)`
+ - _Example problem_: [Social Distancing](http://www.usaco.org/index.php?page=viewproblem2&cpid=1038)
+ - <details>
+   <summary><i>Pseudocode:</i></summary>
+
+   ```
+   # Source: https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
+
+   function binary_search(A, n, T) is # A: array, n: length, T: target
+    L := 0
+    R := n − 1
+    while L ≤ R do
+        m := floor((L + R) / 2)
+        if A[m] < T then
+            L := m + 1
+        else if A[m] > T then
+            R := m − 1
+        else:
+            return m
+    return unsuccessful
+
+   ```
+   </details>
+
 
 If none from these approaches will do it for your problem, maybe using the right  data type will. Usually these data types will have to be mixed with one of the approaches seen above.
 
@@ -60,7 +83,7 @@ If none from these approaches will do it for your problem, maybe using the right
  - _Note_: in `C++` there is a `map` and an `unordered_map`.
 
 ### Sets
- - _Problems_: this is used in problems where: you need to be able to check if a value exist, you need to get unique values in `O(n)` (standard way with array is `O(log n))` time.
+ - _Problems_: this is used in problems where: you need to be able to check if a value exist, you need to get unique values in `O(n)` (standard way with array is `O(n * log n)` time.
  -  _Example problem_: [Sum of two values](https://cses.fi/problemset/task/1640)
  - _Note_: in `C++` there is a `set` and an `unordered_set`.
 
@@ -81,7 +104,7 @@ Sometimes you're using the right approach but things still don't work. I that ca
 ## Sources
  - [Wikipedia](https://wikipedia.org) for some descriptions
  - [CSES](https://cses.fi), [Codeforces](https://codeforces.com), [USACO](http://usaco.org) for the problems
- - [Usaco Guide](https://usaco.guide) for th
+ - [Usaco Guide](https://usaco.guide) for the problem selection and some explanations
 
 ## Improvements?
 If you feel like something is missing or you'd like to improve it, PR's are appreciated.
