@@ -72,6 +72,60 @@ _Note: time complexity and space complexity are very dependent on the input data
    ```
    </details>
 
+### Depth-first search
+ - _Description_: this is an algorithm which traverses a graph by searching into all reachable nodes, while keeping track of visited ones.
+ - _Problems_: this is used in problems where you need to traverse a graph.
+ - _Time complexity_: `O(n)`
+ - _Example problem_: [Closing the farm](http://www.usaco.org/index.php?page=viewproblem2&cpid=644)
+ - <details>
+   <summary><i>Code:</i></summary>
+
+   ```c++
+   // Source: Competitive programmer's handbook, Chapter 12
+   vector<int> adj[N];
+   bool visited[N];
+
+   void dfs(int s) {
+     if (visited[s]) return;
+     visited[s] = true;
+     // process node s
+     for (auto u: adj[s]) {
+       dfs(u);
+     }
+   }
+   ```
+   </details>
+
+### Breadth-first search
+  - _Description_: this is an algorithm which traverses a graph by searching into all nodes in increasing order of their distance
+from the starting node.
+  - _Problems_: this is used in problems where you traverse a graph while keeping track of the distance between nodes.
+  - _Time complexity_: `O(n)`
+  - <details>
+    <summary><i>Code:</i></summary>
+
+    ```c++
+    // Source: Competitive programmer's handbook, Chapter 12
+    queue<int> q;
+    bool visited[N];
+    int distance[N];
+
+    visited[x] = true;
+    distance[x] = 0;
+    q.push(x);
+    while (!q.empty()) {
+      int s = q.front(); q.pop();
+      // process node s
+      for (auto u : adj[s]) {
+        if (visited[u]) continue;
+        visited[u] = true;
+        distance[u] = distance[s]+1;
+        q.push(u);
+      }
+    }
+    ```
+    </details>
+
 
 If none from these approaches will do it for your problem, maybe using the right  data type will. Usually these data types will have to be mixed with one of the approaches seen above.
 
@@ -88,7 +142,7 @@ If none from these approaches will do it for your problem, maybe using the right
  - _Note_: in `C++` there is a `set` and an `unordered_set`.
 
 ## Miscelaneous
-Sometimes you're using the right approach but things still don't work. I that case you may try with these small fixes/optimizations.
+Sometimes you're using the right approach but things still don't work. I that case you can try these small fixes/optimizations.
 
 ### Fast I/O
  - _Description_: Adding these two lines will spead up the reading/writing of your program.
@@ -101,6 +155,10 @@ Sometimes you're using the right approach but things still don't work. I that ca
    cin.tie(NULL);
    ```
    </details>
+
+### Integer overflow
+ - _Description_: some problems require using a `long long` type instead of an `int`. If you experience some kind of `int` overflow, try with a `long long`.
+
 ## Sources
  - [Wikipedia](https://wikipedia.org) for some descriptions
  - [CSES](https://cses.fi), [Codeforces](https://codeforces.com), [USACO](http://usaco.org) for the problems
