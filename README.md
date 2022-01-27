@@ -53,7 +53,7 @@ _Note: time complexity and space complexity are very dependent on the input data
  - <details>
    <summary><i>Pseudocode:</i></summary>
 
-   ```
+   <pre>
    # Source: https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure
 
    function binary_search(A, n, T) is # A: array, n: length, T: target
@@ -69,7 +69,7 @@ _Note: time complexity and space complexity are very dependent on the input data
             return m
     return unsuccessful
 
-   ```
+   </pre>
    </details>
 
 ### Depth-first search
@@ -80,7 +80,8 @@ _Note: time complexity and space complexity are very dependent on the input data
  - <details>
    <summary><i>Code:</i></summary>
 
-   ```c++
+   <pre>
+   // c++
    // Source: Competitive programmer's handbook, Chapter 12
    vector<int> adj[N];
    bool visited[N];
@@ -93,7 +94,7 @@ _Note: time complexity and space complexity are very dependent on the input data
        dfs(u);
      }
    }
-   ```
+   </pre>
    </details>
 
 ### Breadth-first search
@@ -104,7 +105,8 @@ from the starting node.
   - <details>
     <summary><i>Code:</i></summary>
 
-    ```c++
+    <pre>
+    // c++
     // Source: Competitive programmer's handbook, Chapter 12
     queue<int> q;
     bool visited[N];
@@ -123,7 +125,7 @@ from the starting node.
         q.push(u);
       }
     }
-    ```
+    </pre>
     </details>
 
 
@@ -150,10 +152,11 @@ Sometimes you're using the right approach but things still don't work. I that ca
  - <details>
    <summary><i>Code:</i></summary>
 
-   ```c++
+   <pre>
+   // c++
    ios_base::sync_with_stdio(false);
    cin.tie(NULL);
-   ```
+   </pre>
    </details>
 
 ### Integer overflow
