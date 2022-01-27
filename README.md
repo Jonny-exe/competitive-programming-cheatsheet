@@ -63,9 +63,21 @@ If none from these approaches will do it for your problem, maybe using the right
  - _Problems_: this is used in problems where: you need to be able to check if a value exist, you need to get unique values in `O(n)` (standard way with array is `O(log n))` time.
  -  _Example problem_: [Sum of two values](https://cses.fi/problemset/task/1640)
  - _Note_: in `C++` there is a `set` and an `unordered_set`.
- 
 
+## Miscelaneous
+Sometimes you're using the right approach but things still don't work. I that case you may try with these small fixes/optimizations.
 
+### Fast I/O
+ - _Description_: Adding these two lines will spead up the reading/writing of your program.
+ - _Note_: this only works with `C++`.
+ - <details>
+   <summary><i>Code:</i></summary>
+
+   ```c++
+   ios_base::sync_with_stdio(false);
+   cin.tie(NULL);
+   ```
+   </details>
 ## Sources
  - [Wikipedia](https://wikipedia.org) for some descriptions
  - [CSES](https://cses.fi), [Codeforces](https://codeforces.com), [USACO](http://usaco.org) for the problems
