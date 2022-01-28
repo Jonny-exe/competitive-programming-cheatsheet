@@ -97,8 +97,7 @@ _Note: time complexity and space complexity are very dependent on the input data
    </details>
 
 ### Breadth-first search
-  - _Description_: this is an algorithm which traverses a graph by searching into all nodes in increasing order of their distance
-from the starting node.
+  - _Description_: this is an algorithm which traverses a graph by searching into all nodes in increasing order of their distance from the starting node.
   - _Problems_: this is used in problems where you traverse a graph while keeping track of the distance between nodes.
   - _Time complexity_: `O(n)`
   - <details>
