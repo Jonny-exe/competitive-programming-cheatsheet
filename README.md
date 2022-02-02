@@ -142,11 +142,18 @@ If none from these approaches will do it for your problem, maybe using the right
  -  _Example problem_: [Sum of two values](https://cses.fi/problemset/task/1640)
  - _Note_: in `C++` there is a `set` and an `unordered_set`.
 
-## Miscelaneous
+### Graphs
+ - _Problems_: this is used in problems where you need to be able to connect nodes in a cycle.
+ - _Note_: this can be represented in many ways, such as, adjacency list representation, adjacency matrix representation, edge list representation...
+
+### Trees
+ - _Problems_: this is used in problems where you need to be able to connect some parent node with child nodes.
+
+## Miscellaneous
 Sometimes you're using the right approach but things still don't work. I that case you can try these small fixes/optimizations.
 
 ### Fast I/O
- - _Description_: Adding these two lines will spead up the reading/writing of your program.
+ - _Description_: Adding these two lines will speed up the reading/writing of your program.
  - _Note_: this only works with `C++`.
  - <details>
    <summary><i>Code:</i></summary>
